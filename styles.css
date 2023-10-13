@@ -13,11 +13,6 @@ header {
     align-items: center;
 }
 
-#logo {
-    width: calc(3 * 50px); /* 3x2 aspect ratio */
-    height: 100px;
-    overflow: hidden; /* Hide excess parts of the image if any */
-}
 
 
 nav {
