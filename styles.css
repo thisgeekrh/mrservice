@@ -14,23 +14,39 @@ header {
 }
 
 #logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    width: calc(3 * 50px); /* 3x2 aspect ratio */
+    height: 100px;
+    overflow: hidden; /* Hide excess parts of the image if any */
+}
+
+#logo img {
+    width: 100%; /* Scale the image to fit the div */
+    height: auto;
+}
+
+nav {
+    border-bottom: 3px solid red; /* The blue line under the navigation */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav li {
-    display: inline;
     margin: 0 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    padding: 5px 10px; /* Some padding to make it look better */
+}
+
+nav a:hover {
+    background-color: #005599; /* Change the color on hover for better UX */
 }
 
 main {
