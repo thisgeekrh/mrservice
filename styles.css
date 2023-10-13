@@ -14,7 +14,6 @@ header {
 }
 
 
-
 nav {
     border-bottom: 4px solid red; /* The blue line under the navigation */
 }
@@ -43,6 +42,18 @@ nav a:hover {
 main {
     padding: 20px;
 }
+
+#navbar-logo {
+    height: 80px;
+    width: 76px;
+    transition: all 0.3s ease-in-out; /* This provides the smooth transition effect */
+}
+
+.shrunk #navbar-logo {
+    height: 50px;
+    width: 47.5px;
+}
+
 
 footer {
     background-color: #f1f1f1;
