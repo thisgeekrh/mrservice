@@ -19,15 +19,9 @@ header {
     overflow: hidden; /* Hide excess parts of the image if any */
 }
 
-#logo {
-    width: calc(3 * 40px); /* Adjust this value for the desired width */
-    height: 80px; /* Adjust this value for the desired height */
-    overflow: hidden;
-}
-
 
 nav {
-    border-bottom: 3px solid red; /* The blue line under the navigation */
+    border-bottom: 4px solid red; /* The blue line under the navigation */
 }
 
 nav ul {
