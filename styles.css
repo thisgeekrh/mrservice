@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -13,9 +16,8 @@ header {
     align-items: center;
 }
 
-
 nav {
-    border-bottom: 4px solid red; /* The blue line under the navigation */
+    border-bottom: 4px solid red; 
 }
 
 nav ul {
@@ -32,21 +34,22 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px; /* Some padding to make it look better */
+    padding: 5px 10px; 
 }
 
 nav a:hover {
-    background-color: #005599; /* Change the color on hover for better UX */
+    background-color: #005599; 
 }
 
 main {
+    flex: 1 0 auto;
     padding: 20px;
 }
 
 #navbar-logo {
-    height: 80px;
-    width: 76px;
-    transition: all 0.3s ease-in-out; /* This provides the smooth transition effect */
+    height: 100px;  /* initial size adjusted */
+    width: 95px;    /* maintain the aspect ratio */
+    transition: all 0.3s ease-in-out; 
 }
 
 .shrunk #navbar-logo {
@@ -54,9 +57,9 @@ main {
     width: 47.5px;
 }
 
-
 footer {
     background-color: #f1f1f1;
     padding: 10px 20px;
     text-align: center;
+    flex-shrink: 0;
 }
